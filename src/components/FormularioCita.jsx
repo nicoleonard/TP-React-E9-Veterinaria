@@ -7,7 +7,9 @@ const FormularioCita = () => {
     return (
         <Form>
             <Card>
-                <CardHeader className='bg-secondary'><h6 className='text-light text-center pt-2'>Llenar el formulario para registrar una cita</h6></CardHeader>
+                <CardHeader className='bg-secondary bg-gradient'>
+                    <h6 className='text-light text-center pt-2'>Llenar el formulario para registrar una cita</h6>
+                </CardHeader>
                 <Card.Body>
                     <Form.Group className="mb-3" controlId="nombreAnimal">
                         <Form.Label>Nombre del paciente</Form.Label>
