@@ -6,6 +6,7 @@ import CardHeader from 'react-bootstrap/esm/CardHeader';
 const FormularioCita = () => {
     const manejadorSubmit = (event)=>{
         event.preventDefault();
+        event.target.reset();
     }
     return (
         <Form onSubmit={manejadorSubmit}>
