@@ -15,7 +15,7 @@ const [registroCitas, setRegistroCitas] = useState([])
 
     const manejadorSubmit = (event)=>{
         event.preventDefault();
-        setRegistroCitas([...registroCitas, {nombreAnimal, nombrePersona, fecha, hora, sintomas}])
+        setRegistroCitas([...registroCitas, {nombreAnimal: nombreAnimal, nombrePersona: nombrePersona, fecha: fecha , hora: hora, sintomas: sintomas}])
         event.target.reset();
     }
     return (
