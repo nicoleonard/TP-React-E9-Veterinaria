@@ -4,8 +4,11 @@ import Form from 'react-bootstrap/Form';
 import CardHeader from 'react-bootstrap/esm/CardHeader';
 
 const FormularioCita = () => {
+    const manejadorSubmit = (event)=>{
+        event.preventDefault();
+    }
     return (
-        <Form>
+        <Form onSubmit={manejadorSubmit}>
             <Card>
                 <CardHeader className='bg-secondary bg-gradient'>
                     <h6 className='text-light text-center pt-2'>Llenar el formulario para registrar una cita</h6>
