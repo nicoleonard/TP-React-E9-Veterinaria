@@ -3,6 +3,7 @@ import { Card, Col, Row } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import CardHeader from 'react-bootstrap/esm/CardHeader';
+import ListaCards from './ListaCards.jsx';
 
 const FormularioCita = () => {
 const [nombreAnimal, setNombreAnimal] = useState(""); 
@@ -14,10 +15,11 @@ const [registroCitas, setRegistroCitas] = useState([])
 
     const manejadorSubmit = (event)=>{
         event.preventDefault();
-        setRegistroCitas([...registroCitas, {animal: nombreAnimal,persona: nombrePersona,fecha: fecha, hora: hora,sintomas: sintomas}])
+        setRegistroCitas([...registroCitas, {nombreAnimal, nombrePersona, fecha, hora, sintomas}])
         event.target.reset();
     }
     return (
+        <>
         <Form onSubmit={manejadorSubmit}>
             <Card>
                 <CardHeader className='bg-secondary bg-gradient'>
@@ -54,6 +56,9 @@ const [registroCitas, setRegistroCitas] = useState([])
                 </Card.Footer>
             </Card>
         </Form>
+        <ListaCards registroCitas={registroCitas}></ListaCards>
+        </>
+        
     );
 };
 

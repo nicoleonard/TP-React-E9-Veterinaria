@@ -1,6 +1,6 @@
 import { Card, Image, Col, Row, ListGroup, Button } from "react-bootstrap";
 
-const CardCita = () => {
+const CardCita = ({cita}) => {
     return (
         <Card className="px-0">
             <Card.Header>
@@ -10,7 +10,7 @@ const CardCita = () => {
                     </Col>
                     <Col>
                         <Row>
-                            <p className="fs-6">Nombre Mascota</p>
+                            <p className="fs-6">Nombre Animal</p>
                         </Row>
                         <Row>
                             <p className="text-secondary fw-light">Nombre Dueño</p>
