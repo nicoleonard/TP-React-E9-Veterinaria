@@ -1,5 +1,6 @@
 import { Container } from 'react-bootstrap'
 import './App.css'
+import FormularioCita from './components/FormularioCita'
 
 function App() {
   return (
@@ -9,8 +10,9 @@ function App() {
           <h1>Administrador de pacientes de veterinaria</h1>
           <hr />
         </Container>
+
         <Container>
-          
+          <FormularioCita/>
         </Container>
         <Container>
 
